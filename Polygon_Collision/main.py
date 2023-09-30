@@ -146,7 +146,7 @@ class Game():
         #                                              [self.c_point2[0]+self.center[0], self.c_point2[1]+self.center[1]],
         #                                              [self.c_point3[0]+self.center[0], self.c_point3[1]+self.center[1]],
         #                                              [self.c_point4[0]+self.center[0], self.c_point4[1]+self.center[1]]])
-        pygame.display.update()
+        """
         # reset character points for rotating algorithm
         self.c_point1 = [0 - 20, 0 - 10]
         self.c_point2 = [0 - 10, 0]
@@ -159,6 +159,7 @@ class Game():
         #render lines for debugging
         for line in self.lines:
             pygame.draw.line(self.window, self.BLACK,line[0], line[1], width=3)
+        """
 
     def update(self):
         # update character angle
